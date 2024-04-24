@@ -1,0 +1,28 @@
+body {
+  margin: 0;
+}
+.conteiner {
+  display: grid;
+  grid-template-areas:
+    "nav nav nav"
+    "main main main"
+    "footer footer footer";
+  height: 100vh;
+  gap: 5px;
+}
+nav {
+  background-color: aqua;
+  grid-area: nav;
+  height: 20vh;
+}
+
+main {
+  background-color: brown;
+  grid-area: main;
+  height: 70vh;
+}
+footer {
+  background-color: chartreuse;
+  grid-area: footer;
+  height: 10vh;
+}

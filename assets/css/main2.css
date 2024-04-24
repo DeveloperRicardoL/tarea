@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  background-color: black;
+}
+.conteiner {
+  color: white;
+  display: grid;
+  grid-template-rows: auto 2fr auto;
+  grid-template-columns: 0.5fr 1fr 1fr;
+  grid-template-areas:
+    "nav nav nav"
+    "aside main main"
+    "footer footer footer";
+  gap: 10px;
+  margin: 10px;
+  height: 100vh;
+}
+nav {
+  display: flex;
+  align-items: center;
+  grid-area: nav;
+  background-color: blueviolet;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+aside {
+  grid-area: aside;
+  background-color: aqua;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+main {
+  grid-area: main;
+  background-color: gray;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+footer {
+  grid-area: footer;
+  background-color: bisque;
+  border: 2px solid black;
+  border-radius: 10px;
+}
